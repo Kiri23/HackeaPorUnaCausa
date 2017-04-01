@@ -1,3 +1,4 @@
+var mongoose = require('mongoose');
 var visitanteSchema = new mongoose.Schema({
   nombre: String
 });
