@@ -7,9 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  var user_name=req.body.user;
-  var password=req.body.password;
-  console.log("User name = "+user_name+", password is "+password);
+  var user_name=req.body.nombre;
+  console.log("User name = "+user_name);
   res.render('success', { title: 'Express' });
 });
 module.exports = router;
