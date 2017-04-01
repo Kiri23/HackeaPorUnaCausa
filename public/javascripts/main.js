@@ -2,7 +2,7 @@ var btnanadir = $('#anadir');
 
 btnanadir.click(function() {
   $.post( "/registro", function( data ) {
-      alert(btnanadir.val());
+      alert(btnanadir.text());
       console.log(data);
   });
 });
