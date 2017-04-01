@@ -11,7 +11,7 @@ var users = require('./routes/users');
 var registro = require('./routes/registro');
 var config = require ('./config');
 
-console.log(config.mongoURL);
+console.log(config);
 var app = express();
 
 // view engine setup
