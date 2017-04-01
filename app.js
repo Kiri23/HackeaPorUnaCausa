@@ -11,6 +11,11 @@ var users = require('./routes/users');
 var registro = require('./routes/registro');
 var config = require ('./config');
 
+mongoose.connect(config.mongoURL);
+
+mongoose.connection.on('connected', function () {
+  console.log('Mongoose default connection open to ' + dbURI);
+}); 
 console.log(config);
 var app = express();
 
