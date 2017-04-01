@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  console.log(req.body)
+  console.log(req)
   var user_name=req.body.nombre;
   console.log("User name = "+user_name);
   res.render('success', { title: 'Express' });
