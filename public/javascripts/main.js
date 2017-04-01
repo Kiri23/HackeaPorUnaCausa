@@ -1,8 +1,9 @@
 var btnanadir = $('#anadir');
 
+
 btnanadir.click(function() {
   $.post( "/registro", function( data ) {
-      alert(btnanadir.text());
+      alert($('input[name=nombre]').text());
       console.log(data);
   });
 });
