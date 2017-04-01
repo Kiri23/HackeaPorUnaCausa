@@ -1,10 +1,10 @@
 var btnanadir = $('#anadir');
-var nombre = $('#nombre').val();
-console.log(nombre);
 
 
 btnanadir.click(function() {
   $.post( "/registro", function( data ) {
+    console.log(data)
+    var nombre = $('#nombre').val();
       alert(nombre);
       console.log(data);
   });
