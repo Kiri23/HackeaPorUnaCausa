@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var registro = require('./routes/registro');
-var config = require ('config');
+var config = require ('./config');
 
 console.log(config.mongoURL);
 var app = express();
