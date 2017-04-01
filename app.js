@@ -11,6 +11,7 @@ var users = require('./routes/users');
 var registro = require('./routes/registro');
 var config = require ('./config');
 
+
 console.log(config.mongoURL);
 mongoose.connect(config.mongoURL);
 
