@@ -1,5 +1,5 @@
 var btnanadir = $('#anadir');
-var nombre = $('#nombre');
+var nombre = $('#nombre').val();
 console.log(nombre);
 
 
