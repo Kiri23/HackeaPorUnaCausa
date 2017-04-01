@@ -15,7 +15,7 @@ console.log(config.mongoURL);
 mongoose.connect(config.mongoURL);
 
 mongoose.connection.on('connected', function () {
-  console.log('Mongoose default connection open to ' + dbURI);
+  console.log('Mongoose default connection open to ');
 });
 console.log(config);
 var app = express();
