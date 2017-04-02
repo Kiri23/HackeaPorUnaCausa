@@ -9,10 +9,43 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   console.log(req)
-  var user_name=req.body.nombre;
+  var nombre=req.body.nombre;
+  var fecha=req.body.fecha;
+  var entrado_por=req.body.entradopor;
+  var encargado = req.body.encargado;
+  var pueblo=req.body.pueblo;
+  var grado=req.body.grado;
+  var clasificacion=req.body.clasificacion;
+  var ofrecimiento=req.body.ofrecimiento;
+  var cantidad=req.body.cantidad;
+  var niños=req.body.niños;
+  var adultos=req.body.adultos;
+  var seniors=req.body.seniors;
+  var impedidos=req.body.impedidos;
+  var maestros=req.body.maestros;
+  var nocharge=req.body.nocharge;
+  var total=req.body.total;
+  var eventos=req.body.eventos;
 
   var visi = new visitante({
-  nombre:user_name
+  nombre:nombre,
+  fecha:fecha,
+  admin:entrado_por,
+  encargado:encargado,
+  pueblo:pueblo,
+  grado:grado,
+  clasificacion:clasificacion,
+  ofrecimientos:ofrecimiento,
+  cantidad:cantidad,
+  niños:niños,
+  adultos:adultos,
+  seniors:seniors,
+  impedidos:impedidos,
+  maestros:maestros,
+  nocharge:nocharge,
+  total:total,
+  eventos:eventos
+  
 });
 
 
