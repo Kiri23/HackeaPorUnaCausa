@@ -53,6 +53,6 @@ visi.save(function(err, vis) {
 });
 
   console.log("User name = "+user_name);
-  res.render('success', { title: 'Express' });
+  res.send.json('success', visi);
 });
 module.exports = router;
