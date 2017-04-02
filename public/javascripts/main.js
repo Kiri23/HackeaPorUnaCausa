@@ -11,12 +11,12 @@ btnanadir.click(function() {
   var clasificacion = $('#clasificacion').val();
   var ofrecimiento = $('#ofrecimiento').val();
   var cantidad = $('#cantidad').val();
-  var niños = $('#ninos').val();
-  var adultos = $('#adultos').val();
-  var seniors = $('#seniors').val();
-  var impedidos = $('#impedidos').val();
-  var maestros = $('#maestros').val();
-  var nocharge  = $('#nocharge').val();
+  var niños = parseInt($('#ninos').val());
+  var adultos = parseInt($('#adultos').val());
+  var seniors = parseInt($('#seniors').val());
+  var impedidos = parseInt($('#impedidos').val());
+  var maestros = parseInt($('#maestros').val());
+  var nocharge  = parseInt($('#nocharge').val());
   var total = parseInt(cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge);
   var eventos = $('#eventos').val();
 
