@@ -1,35 +1,67 @@
 extends layout
 
 block content
-  h1 c3tec
-  span Nombre:
-  input#nombre(type='text' name='nombre')
-  span Entrado por:
-  input#entradopor(type='text' name='entradopor')
-  span Encargado:
-  input#encargado(type='text' name='encargado')
-  span Pueblo:
-  input#pueblo(type='text' name='pueblo')
-  span Grado:
-  input#grado(type='text' name='grado')
-  span clasificacion:
-  input#clasificacion(type='text' name='clasificacion')
-  span Ofrecimiento:
-  input#ofrecimiento(type='text' name='ofrecimiento')
-  span Cantidad:
-  input#cantidad(type='text' name='cantidad')
-  span Niños:
-  input#ninos(type='text' name='ninos')
-  span Adultos:
-  input#adultos(type='text' name='adultos')
-  span Seniors:
-  input#seniors(type='text' name='seniors')
-  span impedidos:
-  input#impedidos(type='text' name='impedidos')
-  span Maestros:
-  input#maestros(type='text' name='maestros')
-  span No Charge:
-  input#nocharge(type='text' name='nocharge')
-  span Eventos:
-  input#eventos(type='text' name='eventos')
-  button.btn.btn-success#anadir submit
+  h1 Add visitors Page
+  p Fill the form with the provided information of the visitors.
+  .col-md-4.inputGroupContainer
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='nombre', placeholder='Nombre', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-pencil
+      input.form-control(name='entradopor', placeholder='C3TEC Admin', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='encargado', placeholder='Persona encargado', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-map-marker
+      input.form-control(name='pueblo', placeholder='Pueblo', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-education
+      input.form-control(name='grado', placeholder='Grado', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-tasks
+      input.form-control(name='clasificacion', placeholder='Clasificacion', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-leaf
+      input.form-control(name='ofrecimiento', placeholder='Ofrecimiento', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-list-alt
+      input.form-control(name='cantidad', placeholder='Cantidad', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='ninos', placeholder='Niños', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='adultos', placeholder='Adultos', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='seniors', placeholder='Seniors', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-heart
+      input.form-control(name='impedidos', placeholder='Condiciones Especiales', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='maestros', placeholder='Maestros', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input.form-control(name='nocharge', placeholder='Sin Cargo', type='text')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-calendar
+      input.form-control(name='eventos', placeholder='Eventos', type='text')
+    button.btn.btn-success#anadir submit
