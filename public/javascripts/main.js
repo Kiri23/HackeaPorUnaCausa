@@ -3,7 +3,7 @@ var btnanadir = $('#anadir');
 
 btnanadir.click(function() {
   var nombre = $('#nombre').val();
-  var fecha = $('#fecha').val();
+  var fecha = Date();
   var entrado_por = $('#entrado_por').val();
   var encargado = $('#encargado').val();
   var pueblo = $('#pueblo').val();
@@ -17,10 +17,10 @@ btnanadir.click(function() {
   var impedidos = $('#impedidos').val();
   var maestros = $('#maestros').val();
   var nocharge  = $('#nocharge').val();
-  var total = cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge;
+  var total = +(cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge);
   var eventos = $('#eventos').val();
 
-  $.post( "/registro",{'nombre':nombre,'fecha':Date(),'entrado_por':entrado_por,
+  $.post( "/registro",{'nombre':nombre,'fecha': fecha,'entrado_por':entrado_por,
                        'encargado':encargado,'pueblo':pueblo,'grado':grado,
                        'clasificacion':clasificacion,'ofrecimiento':ofrecimiento,
                        'cantidad':cantidad,'niños':niños,'adultos':adultos,'seniors':seniors,
