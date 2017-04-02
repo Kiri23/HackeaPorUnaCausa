@@ -10,14 +10,15 @@ btnanadir.click(function() {
   var grado = $('#grado').val();
   var clasificacion = $('#clasificacion').val();
   var ofrecimiento = $('#ofrecimiento').val();
-  var cantidad = $('#cantidad').val();
+  var cantidad = parseInt($('#cantidad').val());
   var niños = parseInt($('#ninos').val());
   var adultos = parseInt($('#adultos').val());
   var seniors = parseInt($('#seniors').val());
   var impedidos = parseInt($('#impedidos').val());
   var maestros = parseInt($('#maestros').val());
   var nocharge  = parseInt($('#nocharge').val());
-  var total = parseInt(cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge);
+  var total = cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge;
+  console.log(total);
   var eventos = $('#eventos').val();
 
   $.post( "/registro",{'nombre':nombre,'fecha': fecha,'entrado_por':entrado_por,
