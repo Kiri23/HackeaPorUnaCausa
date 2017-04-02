@@ -24,7 +24,7 @@ router.post('/', function(req, res, next) {
   var maestros=req.body.maestros;
   var nocharge=req.body.nocharge;
   var total=req.body.total;
-  var eventos=req.body.eventos;
+  var eventos=req.body.eventos ? req.body.eventos: 'Sin Evento';
 
   var visi = new visitante({
   nombre:nombre,
