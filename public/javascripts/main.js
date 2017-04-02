@@ -20,7 +20,7 @@ btnanadir.click(function() {
   var total = cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge;
   var eventos = $('#eventos').val();
 
-  $.post( "/registro",{'nombre':nombre,'fecha': new Date(),'entrado_por':entrado_por,
+  $.post( "/registro",{'nombre':nombre,'fecha':Date(),'entrado_por':entrado_por,
                        'encargado':encargado,'pueblo':pueblo,'grado':grado,
                        'clasificacion':clasificacion,'ofrecimiento':ofrecimiento,
                        'cantidad':cantidad,'niños':niños,'adultos':adultos,'seniors':seniors,
