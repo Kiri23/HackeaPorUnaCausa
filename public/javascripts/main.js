@@ -11,7 +11,7 @@ btnanadir.click(function() {
   var clasificacion = $('#clasificacion').val();
   var ofrecimiento = $('#ofrecimiento').val();
   var cantidad = $('#cantidad').val();
-  var niños = $('#niños').val();
+  var niños = $('#ninos').val();
   var adultos = $('#adultos').val();
   var seniors = $('#seniors').val();
   var impedidos = $('#impedidos').val();

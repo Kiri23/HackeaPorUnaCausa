@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
   var clasificacion=req.body.clasificacion;
   var ofrecimiento=req.body.ofrecimiento;
   var cantidad=req.body.cantidad;
-  var niños=req.body.niños;
+  var niños=req.body.ninos;
   var adultos=req.body.adultos;
   var seniors=req.body.seniors;
   var impedidos=req.body.impedidos;
@@ -45,7 +45,7 @@ router.post('/', function(req, res, next) {
   nocharge:nocharge,
   total:total,
   eventos:eventos
-  
+
 });
 
 
