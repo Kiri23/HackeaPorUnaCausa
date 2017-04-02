@@ -3,7 +3,7 @@ var btnanadir = $('#anadir');
 
 btnanadir.click(function() {
   var nombre = $('#nombre').val();
-  var fecha = Date();
+  var fecha = new Date();
   var entrado_por = $('#entrado_por').val();
   var encargado = $('#encargado').val();
   var pueblo = $('#pueblo').val();
