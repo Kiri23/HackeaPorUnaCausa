@@ -1,9 +1,35 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+h1 {
+  padding: 15px;
+}
+p {
+  font-size: 18px;
+  padding-left: 30px;
+}
+a {
+  padding-left: 30px;
+}
+button {
+  padding: inherit;
+  font-size: 18px;
+}
 .btn {
   margin: 5px;
+}
 
+.panel.panel-default {
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+div {
+  padding: 2px;
+}
+input {
+  font-size: 14px;
+  padding-left: 3px;
+}
+span {
+  font-size: 14px;
 }
