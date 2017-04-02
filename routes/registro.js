@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  console.log(req)
   var nombre=req.body.nombre;
   var fecha=req.body.fecha;
   var entrado_por=req.body.entradopor;
@@ -51,7 +50,6 @@ router.post('/', function(req, res, next) {
 
 visi.save(function(err, vis) {
   if (err) return console.error(err);
-  console.dir(vis);
 });
 
   console.log("User name = "+user_name);

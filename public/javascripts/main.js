@@ -27,6 +27,5 @@ btnanadir.click(function() {
                        'impedidos':impedidos,'maestros':maestros,'nocharge':nocharge,'total':total,
                        'eventos':eventos }, function( data ) {
       alert(nombre);
-      console.log(data);
   });
 });
