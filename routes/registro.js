@@ -51,7 +51,7 @@ router.post('/', function(req, res, next) {
 visi.save(function(err, vis) {
   if (err) return console.error(err);
   console.log("User name = "+ vis);
-  res.redirect('/');
+  res.json(vis);
 });
 
 

@@ -26,6 +26,6 @@ btnanadir.click(function() {
                        'cantidad':cantidad,'niños':niños,'adultos':adultos,'seniors':seniors,
                        'impedidos':impedidos,'maestros':maestros,'nocharge':nocharge,'total':total,
                        'eventos':eventos }, function( data ) {
-      alert(nombre);
+      // alert(nombre);
   });
 });
