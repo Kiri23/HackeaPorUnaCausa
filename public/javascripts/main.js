@@ -17,7 +17,7 @@ btnanadir.click(function() {
   var impedidos = parseInt($('#impedidos').val());
   var maestros = parseInt($('#maestros').val());
   var nocharge  = parseInt($('#nocharge').val());
-  var total = cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge;
+  var total = 88 //cantidad + ninos + adultos + seniors + impedidos + maestros + nocharge;
   console.log(total);
   var eventos = $('#eventos').val();
 
