@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1 Reportes
+  table
+    each user in data
+      tr
+        td
+          .input-group
+            span.input-group-addon
+              i.glyphicon.glyphicon-user
+            span.form-control #{user.nombre}
   button.btn.btn-success#anadir submit
