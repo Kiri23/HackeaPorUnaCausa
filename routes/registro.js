@@ -50,9 +50,11 @@ router.post('/', function(req, res, next) {
 
 visi.save(function(err, vis) {
   if (err) return console.error(err);
-});
-
   console.log("User name = "+user_name);
   res.json({"test":"1234"});
+});
+
+
+
 });
 module.exports = router;
